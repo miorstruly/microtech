@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div class="header">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="home.html">
+                        <img src="logo/1.png" alt="" / width="125px">
+                        <h1>STATICSHUFFLE</h1>
+                    </a>
+                </div>
+                <nav class="cart">
+                    <ul id="MenuItems">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a class="dropbtn">Products 
+                            <i class="fa fa-caret-down"></i>
+                          </a>    
+                            <div class="dropdown-content">
+                              <a href="speakers.html">Speakers</a>
+                              <a href="microphones.html">Microphones</a>
+                              <a href="headphones.html">Headphones</a>
+                            </div>
+                        </li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                    <a href="cart.html">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        </a>
+                </nav>
+                
+                <img src="images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
+            </div>
+    </div>
+
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact Us</h2>
+                <div class="contact-content">
+                        <div class="column right">
+                            <div class="text">Send Us a Message</div>
+                        <form action="#">
+                            <div class="fields">
+                                <div class="field name">
+                                    <input type="text" placeholder="Name" required>
+                                </div>
+                                <div class="field email">
+                                    <input type="email" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <input type="text" placeholder="Subject" required>
+                            </div>
+                           
+                            <div class="field">
+                                <input type="text" placeholder="Message.." required>
+                            </div>
+                           
+                            <div class="button">
+                                <button type="submit">Send message</button>
+                            </div>
+                        </form>
+                        
+                </div>
+                </div>
+                </div>
+                </section>
+
+    <div class="footer">
+            <div class="row">
+                <div class="footer-col-6">
+                    <h3>Payment Methods</h3>
+                    <p>We accept payments from the following:</p>
+                    <div class="app-logo">
+                        <a href="#"><img src="images/mastercard.png" width=40px" height="40px" alt="mastercard"></a>
+                        <a href="#"><img src="images/gcash (1).png" alt="gcash"></a>
+                        <a href="#"><img src="images/paymaya.png" alt="paymaya"></a>
+                    </div>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Customer Care</h3>
+                    <ul>
+                        <a href="#"><li>Terms & Conditions</li></a>
+                        <a href="#"><li>Store Locations</li></a>
+                        <a href="#"><li>Return Policy</li></a>   
+                    </ul>
+                </div>
+                <div class="footer-col-6">
+                    <h3>Follow Us</h3>
+                    <ul>
+                    <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright &copy; 2021 | STATICSHUFFLE Corporation</p>
+    </div>
+
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>
